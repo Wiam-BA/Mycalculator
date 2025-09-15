@@ -24,6 +24,10 @@ private:
     float m_firstOperand; // Stores the first number of the operation
     QString m_pendingOperator; // Stores the operator (+, -, etc.)
     bool m_isWaitingForSecondOperand;// State flag
+    float secondOperand;
+    float result;
+    QString m_pending;
+
 
 private slots:
     void number_button_clicked();
