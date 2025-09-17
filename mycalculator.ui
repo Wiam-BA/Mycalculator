@@ -1137,6 +1137,7 @@
     <property name="title">
      <string>About</string>
     </property>
+    <addaction name="actionits_a_calculator_duh"/>
    </widget>
    <addaction name="menuCalculator"/>
    <addaction name="menuAbout"/>
@@ -1145,6 +1146,11 @@
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionits_a_calculator_duh">
+   <property name="text">
+    <string>I mean its a calculator duh</string>
    </property>
   </action>
  </widget>

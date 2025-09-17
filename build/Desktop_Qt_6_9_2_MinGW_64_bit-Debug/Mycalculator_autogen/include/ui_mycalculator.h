@@ -27,6 +27,7 @@ class Ui_MyCalculator
 {
 public:
     QAction *actionExit;
+    QAction *actionits_a_calculator_duh;
     QWidget *centralwidget;
     QPlainTextEdit *plainTextEdit;
     QWidget *gridLayoutWidget;
@@ -150,6 +151,8 @@ public:
         MyCalculator->setPalette(palette);
         actionExit = new QAction(MyCalculator);
         actionExit->setObjectName("actionExit");
+        actionits_a_calculator_duh = new QAction(MyCalculator);
+        actionits_a_calculator_duh->setObjectName("actionits_a_calculator_duh");
         centralwidget = new QWidget(MyCalculator);
         centralwidget->setObjectName("centralwidget");
         plainTextEdit = new QPlainTextEdit(centralwidget);
@@ -398,6 +401,7 @@ public:
         menubar->addAction(menuCalculator->menuAction());
         menubar->addAction(menuAbout->menuAction());
         menuCalculator->addAction(actionExit);
+        menuAbout->addAction(actionits_a_calculator_duh);
 
         retranslateUi(MyCalculator);
 
@@ -408,6 +412,7 @@ public:
     {
         MyCalculator->setWindowTitle(QCoreApplication::translate("MyCalculator", "MyCalculator", nullptr));
         actionExit->setText(QCoreApplication::translate("MyCalculator", "Exit", nullptr));
+        actionits_a_calculator_duh->setText(QCoreApplication::translate("MyCalculator", "I mean its a calculator duh", nullptr));
         pushButton_n5->setText(QCoreApplication::translate("MyCalculator", "5", nullptr));
         pushButton_del2->setText(QCoreApplication::translate("MyCalculator", "C", nullptr));
         pushButton_del3->setText(QCoreApplication::translate("MyCalculator", "<-", nullptr));

@@ -21,6 +21,7 @@ public:
 private:
     Ui::MyCalculator *ui;
     QString m_storedValue; // QString to store a string value.
+    QString m_storedValue1;
     float m_firstOperand; // Stores the first number of the operation
     QString m_pendingOperator; // Stores the operator (+, -, etc.)
     bool m_isWaitingForSecondOperand;// State flag
