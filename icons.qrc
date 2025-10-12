@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>myassests/arrow-big-left-svgrepo-com.svg</file>
+        <file>myassests/cross-svgrepo-com.svg</file>
+        <file>myassests/delete-svgrepo-com.svg</file>
+        <file>myassests/divide-mathematical-sign-svgrepo-com.svg</file>
+        <file>myassests/divide-svgrepo-com.svg</file>
+        <file>myassests/equal-mathematical-sign-svgrepo-com.svg</file>
+        <file>myassests/equal-svgrepo-com.svg</file>
+        <file>myassests/mathematical-basic-signs-of-plus-and-minus-with-a-slash-svgrepo-com.svg</file>
+        <file>myassests/minus-svgrepo-com.svg</file>
+        <file>myassests/multiply-mathematical-sign-svgrepo-com.svg</file>
+        <file>myassests/percent-svgrepo-com.svg</file>
+        <file>myassests/plus-svgrepo-com.svg</file>
+        <file>myassests/reshot-icon-division-E25687MKPB.svg</file>
+        <file>myassests/reshot-icon-plus-minus-3SRQ4BLCGH.svg</file>
+        <file>myassests/reshot-icon-square-root-PQAJGZML4N.svg</file>
+        <file>myassests/square-root-of-x-mathematical-signs-svgrepo-com.svg</file>
+        <file>myassests/subscript-svgrepo-com.svg</file>
+        <file>myassests/superscript-svgrepo-com.svg</file>
+        <file>myassests/wrench-svgrepo-com.svg</file>
+        <file>myassests/x-svgrepo-com.svg</file>
+    </qresource>
+</RCC>

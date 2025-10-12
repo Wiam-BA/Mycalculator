@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mycalculator.h'
 **
-** Created by: The Qt Meta Object Compiler version 69 (Qt 6.9.2)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.8.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -17,8 +17,8 @@
 #include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'mycalculator.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 69
-#error "This file was generated using the moc from 6.9.2. It"
+#elif Q_MOC_OUTPUT_REVISION != 68
+#error "This file was generated using the moc from 6.8.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -34,48 +34,76 @@ namespace {
 struct qt_meta_tag_ZN12MyCalculatorE_t {};
 } // unnamed namespace
 
-template <> constexpr inline auto MyCalculator::qt_create_metaobjectdata<qt_meta_tag_ZN12MyCalculatorE_t>()
-{
-    namespace QMC = QtMocConstants;
-    QtMocHelpers::StringRefStorage qt_stringData {
-        "MyCalculator",
-        "number_button_clicked",
-        "",
-        "operator_button_clicked",
-        "equals_button_clicked",
-        "del_button_clicked",
-        "del3_button_clicked",
-        "del1_button_clicked"
-    };
 
-    QtMocHelpers::UintData qt_methods {
-        // Slot 'number_button_clicked'
-        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'operator_button_clicked'
-        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'equals_button_clicked'
-        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'del_button_clicked'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'del3_button_clicked'
-        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'del1_button_clicked'
-        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
-    };
-    QtMocHelpers::UintData qt_properties {
-    };
-    QtMocHelpers::UintData qt_enums {
-    };
-    return QtMocHelpers::metaObjectData<MyCalculator, qt_meta_tag_ZN12MyCalculatorE_t>(QMC::MetaObjectFlag{}, qt_stringData,
-            qt_methods, qt_properties, qt_enums);
-}
+#ifdef QT_MOC_HAS_STRINGDATA
+static constexpr auto qt_meta_stringdata_ZN12MyCalculatorE = QtMocHelpers::stringData(
+    "MyCalculator",
+    "number_button_clicked",
+    "",
+    "operator_button_clicked",
+    "equals_button_clicked",
+    "del_button_clicked",
+    "del3_button_clicked",
+    "del1_button_clicked"
+);
+#else  // !QT_MOC_HAS_STRINGDATA
+#error "qtmochelpers.h not found or too old."
+#endif // !QT_MOC_HAS_STRINGDATA
+
+Q_CONSTINIT static const uint qt_meta_data_ZN12MyCalculatorE[] = {
+
+ // content:
+      12,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       6,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   50,    2, 0x08,    1 /* Private */,
+       3,    0,   51,    2, 0x08,    2 /* Private */,
+       4,    0,   52,    2, 0x08,    3 /* Private */,
+       5,    0,   53,    2, 0x08,    4 /* Private */,
+       6,    0,   54,    2, 0x08,    5 /* Private */,
+       7,    0,   55,    2, 0x08,    6 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+
+       0        // eod
+};
+
 Q_CONSTINIT const QMetaObject MyCalculator::staticMetaObject = { {
     QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12MyCalculatorE_t>.stringdata,
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12MyCalculatorE_t>.data,
+    qt_meta_stringdata_ZN12MyCalculatorE.offsetsAndSizes,
+    qt_meta_data_ZN12MyCalculatorE,
     qt_static_metacall,
     nullptr,
-    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN12MyCalculatorE_t>.metaTypes,
+    qt_incomplete_metaTypeArray<qt_meta_tag_ZN12MyCalculatorE_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<MyCalculator, std::true_type>,
+        // method 'number_button_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'operator_button_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'equals_button_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'del_button_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'del3_button_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'del1_button_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
+    >,
     nullptr
 } };
 
@@ -104,7 +132,7 @@ const QMetaObject *MyCalculator::metaObject() const
 void *MyCalculator::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12MyCalculatorE_t>.strings))
+    if (!strcmp(_clname, qt_meta_stringdata_ZN12MyCalculatorE.stringdata0))
         return static_cast<void*>(this);
     return QMainWindow::qt_metacast(_clname);
 }

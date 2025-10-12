@@ -15,7 +15,7 @@ MyCalculator::MyCalculator(QWidget *parent)
 
 {
     ui->setupUi(this);
-
+    ui->statusbar->hide();
     // Instead of manually connecting each button, we can find them and
     // connect them in a loop. This is much more scalable
     QList<QPushButton*> allButtons = this->findChildren<QPushButton*>();
@@ -120,7 +120,7 @@ void MyCalculator::operator_button_clicked()
         //secondOperand = m_storedValue.toFloat();
         result = m_firstOperand - secondOperand;
     }
-    else if (m_pendingOperator == "*")
+    else if (m_pendingOperator == "x")
     {
         //secondOperand = m_storedValue.toFloat();
         result = m_firstOperand * secondOperand;
@@ -145,12 +145,12 @@ void MyCalculator::operator_button_clicked()
         result = 1/m_firstOperand;
         }
     }
-    else if (m_pendingOperator == "X^2")
+    else if (m_pendingOperator == "^")
     {
         secondOperand = 1.0;
         result = m_firstOperand * m_firstOperand;
     }
-    else if (m_pendingOperator == "Square Rt")
+    else if (m_pendingOperator == "r")
     {
         secondOperand = 1.0;
         result = sqrt(m_firstOperand);
@@ -180,7 +180,7 @@ void MyCalculator::operator_button_clicked()
             m_firstOperand = result;
             result = m_firstOperand - secondOperand;
         }
-        else if ( m_pendingOperator == "*")
+        else if ( m_pendingOperator == "x")
         {
             m_firstOperand = result;
             result = m_firstOperand * secondOperand;
@@ -207,11 +207,11 @@ void MyCalculator::operator_button_clicked()
                 result = 1/m_firstOperand;
             }
         }
-        else if (m_pendingOperator == "X^2")
+        else if (m_pendingOperator == "^")
         {   m_firstOperand = result;
             result = m_firstOperand * m_firstOperand;
         }
-        else if (m_pendingOperator == "Square Rt")
+        else if (m_pendingOperator == "r")
         {   m_firstOperand = result;
             result = sqrt(m_firstOperand);
         }
